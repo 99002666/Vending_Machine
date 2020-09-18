@@ -17,7 +17,7 @@ void test_ValidCard(void);
 void test_InvalidPin(void);
 
 /* Start of the application test */
-int test_init() {
+int main() {
 /* Note: Do not edit START*/
   /*Initialize and setup the Test Framework */
   if (CUE_SUCCESS != CU_initialize_registry())
