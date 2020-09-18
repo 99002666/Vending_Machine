@@ -1,4 +1,4 @@
-#include "vending_machine.h"
+//#include "vending_machine.h"
 int main()
 {
  int intro;
@@ -290,5 +290,5 @@ w:  printf("----------------------------------------------------------\n\n");
  }
   else
   end();
-
+return 0;
 }
