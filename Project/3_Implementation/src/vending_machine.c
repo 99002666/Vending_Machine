@@ -39,6 +39,7 @@ void PayByCash()
 void PayByCard()
 {
    char pin[10];
+  int balance = 1000;
    printf("Slide your Debit/Credit card\n");
    printf("Enter the 4-digit PIN\n");
    scanf("%s", &pin);
@@ -55,6 +56,7 @@ void PayByCard()
 
 void chocolate(void)
 {
+ char choco[][10] = {"Cadburry Black Forest", "Kitkat", "Crispy", "Crunch", "Mars", "Kinder Bueno","White Kinder Bueno", "Milky Bar", "M&M", "Choki Choki"};
  int u[30];
  char o[30];
  FILE *choclot;
