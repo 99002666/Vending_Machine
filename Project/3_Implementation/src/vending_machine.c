@@ -16,15 +16,15 @@
 
 void MakePayment()
 {
-    int option;
+    int option, temp;
     printf("Select the Payment method\n");
     printf("1.Cash\n");
     printf("2.Credit/Debit card\n");
     scanf("%d", &option);
     if (option == 1)
-        PayByCash();
+        temp = PayByCash();
     else
-        PayByCard();
+        temp = PayByCard();
 }
 
 int PayByCash()
