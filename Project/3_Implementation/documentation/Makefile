@@ -1,4 +1,4 @@
 # Document the code using Doxygen
 
-doc: Doxyfile
+run: Doxyfile
 	doxygen ./Doxyfile
