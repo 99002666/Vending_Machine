@@ -9,6 +9,8 @@ void menu(void);
 void chocolate(void);
 void MakePayment();
 void end(void);
+int PayByCash( int money, int payment );
+int PayByCard(char pin[]);
 
 int payment;
 int choice;
