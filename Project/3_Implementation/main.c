@@ -1,3 +1,6 @@
+#ifndef __MAIN_H__
+#define __MAIN_H__
+
 #include "vending_machine.h"
 int main()
 {
@@ -293,3 +296,5 @@ w:  printf("----------------------------------------------------------\n\n");
   end();
 return 0;
 }
+
+#endif  
