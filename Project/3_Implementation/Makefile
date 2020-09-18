@@ -1,13 +1,9 @@
-SRC = unity/unity.c\
-src/Prime.c\
-test/test_prime.c\
+SRC = src/vending_machine.c\
 main.c
 
-INC = -Iunity\
--Iinc\
--Itest
+INC = inc/vending_machine.h
 
-PROJECT_NAME = Prime.out
+PROJECT_NAME = Vending_Machine.out
 
 $(PROJECT_NAME): $(SRC)
 	gcc $(SRC) $(INC) -o $(PROJECT_NAME)
