@@ -16,22 +16,29 @@
 
 void MakePayment()
 {
-    int option, temp;
+    int option, temp, money;
+    char pin[10];
     printf("Select the Payment method\n");
     printf("1.Cash\n");
     printf("2.Credit/Debit card\n");
     scanf("%d", &option);
     if (option == 1)
-        temp = PayByCash();
+    {
+        printf("Enter your money: ");
+        scanf("%d",&money);
+        temp = PayByCash(money, payment);
+    }
     else
-        temp = PayByCard();
+    {
+        printf("Slide your Debit/Credit card\n");
+        printf("Enter the 4-digit PIN\n");
+        scanf("%s", &pin);
+        temp = PayByCard(pin);
+    }
 }
 
-int PayByCash()
-{
-   int money;
-   printf("Enter your money: ");
-   scanf("%d",&money);
+int PayByCash( int money, int payment )
+{   
   if (money < payment)
     return -1;
   else
@@ -42,23 +49,19 @@ int PayByCash()
   }
 }
 
-int PayByCard()
-{
-   char pin[10];
+int PayByCard(char pin[])
+{   
   int balance = 1000;
-   printf("Slide your Debit/Credit card\n");
-   printf("Enter the 4-digit PIN\n");
-   scanf("%s", &pin);
    if (strlen(pin) == 4)
    {
        printf("Payment made successfully..\n");
        printf("Your Balance: %d\n\n\n", balance - payment);
-       return (balance - payment);
+       return 2;
    }
    else
    {
        printf("Invalid PIN, Try Again\n\n");
-       return 2;
+       return 3;
    }
 }
 
