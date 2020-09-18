@@ -16,6 +16,7 @@ jobs:
       
     - name: make
       run:  make -C Project/3_Implementation
+      
     - name: Documentation
       run:  make doc Project/3_Implementation/documentation
 
