@@ -18,7 +18,7 @@ jobs:
       run:  make all -C Project/3_Implementation
       
     - name: Documentation
-      run:  make doc Project/3_Implementation/documentation
+      run:  make run Project/3_Implementation/documentation
 
       
       
