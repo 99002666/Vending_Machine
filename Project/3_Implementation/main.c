@@ -95,7 +95,7 @@ int main()
                             printf("\nMoney not acceptable!Please Try again!\n\n");
                             goto x;
                         }
-                        getch();
+                        getc();
 
 
 
