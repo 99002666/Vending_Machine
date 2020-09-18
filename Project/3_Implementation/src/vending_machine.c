@@ -27,16 +27,22 @@ void MakePayment()
         PayByCard();
 }
 
-void PayByCash()
+int PayByCash()
 {
    int money;
    printf("Enter your money: ");
    scanf("%d",&money);
+  if (money < payment)
+    return -1;
+  else
+  {
    printf("Your Balance: %d\n\n", money - payment);
    printf("Please collect your cash\n\n");
+   return (money - payment);
+  }
 }
 
-void PayByCard()
+int PayByCard()
 {
    char pin[10];
   int balance = 1000;
@@ -47,10 +53,12 @@ void PayByCard()
    {
        printf("Payment made successfully..\n");
        printf("Your Balance: %d\n\n\n", balance - payment);
+       return (balance - payment);
    }
    else
    {
        printf("Invalid PIN, Try Again\n\n");
+       return 2;
    }
 }
 
