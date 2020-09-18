@@ -1,7 +1,7 @@
 SRC = src/vending_machine.c\
 main.c
 
-INC = inc/vending_machine.h
+INC = -Iinc
 
 PROJECT_NAME = Vending_Machine.out
 
