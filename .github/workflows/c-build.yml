@@ -21,7 +21,7 @@ jobs:
       run:  cd Project/3_Implementation
       
     - name: list
-      run:  ls Makefile
+      run:  ls 
     
     - name: application
       run:  make run 
