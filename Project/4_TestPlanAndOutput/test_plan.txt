@@ -1,0 +1,11 @@
+Test Plan
+
+
+T_ID	     Description	                                                                                                                      
+T01_H_01	When customer didn’t press any button from keypad, a message “Choose a chocolate” should appear on the display.	                    
+T02_H_01	When a customer selects a chocolate, its price detail must be displayed	Selection of product	                                      
+T03_H_01	When customer confirms a product selection, multiple payment options must be displayed	                                            
+T04_H_03	When customer hits “1” from keypad, a message should appear on the display “Please insert your money”                             	
+T05_H_03	When customer hits “2” from keypad, a message should appear on the display “Slide your card”	                                      
+T06_H_03	If customer slides a debit card, a message should appear on the keypad LCD “Please insert a 4-digit PIN”	                          
+T07_H_03	When customer inserts a 4-digit code for the debit card, the system should send the product to the customer.                                                                                                                        Enters 4-digit PIN	Validates the pin, detects the amount and delivers the product	
