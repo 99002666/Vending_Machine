@@ -19,6 +19,9 @@ jobs:
       
     - name: path
       run:  cd Project/3_Implementation
+    
+    - name: Configure
+      run:  ./configure
       
     - name: list
       run:  ls 
