@@ -1,0 +1,16 @@
+
+High Level Requirements
+Requirement ID	Description
+H_01	          The system shall provide a Multimedia screen display and buttons
+H_03	          The system shall be provided with multiple payment methods
+
+
+Low Level Software Requirements
+Requirement ID	Description
+L01_H_01	      The system should display the available chocolates 
+L02_H_01	      The system should display the price of chocolates
+L03_H_03	      The system must display multiple options for payment, once the customer selected the product
+L04_H_03	      The system shall check for properly inserted cash or mobile payment.
+L05_H_03	      The system shall be able to detect the low amount of stock and report immediately
+L09_H_04	      The system should have high Processing speed, less power consumption, high level security                    and Remote management
+
