@@ -5,23 +5,23 @@ PROJECT_NAME = VENDING_MACHINE
 BUILD = build
 
 # All source code files
-SRC = src/vending_machine.c\
-main.c
+SRC = Project/3_Implementation/src/vending_machine.c\
+Project/3_Implementation/main.c
 
 # All test source files
-TEST_SRC = src/vending_machine.c\
-test/test_file.c
+TEST_SRC = Project/3_Implementation/src/vending_machine.c\
+Project/3_Implementation/test/test_file.c
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
 # All include folders with header files
-INC = -Iinc
+INC = Project/3_Implementation/-Iinc
 
 
 PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
 
 # Document files
-DOCUMENTATION_OUTPUT = documentation/html
+DOCUMENTATION_OUTPUT = Project/3_Implementation/documentation/html
 
 # Default target built
 $(PROJECT_NAME):all
