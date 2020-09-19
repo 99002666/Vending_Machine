@@ -47,7 +47,7 @@ int PayByCash( int money, int payment )
   {
    printf("Your Balance: %d\n\n", money - payment);
    printf("Please collect your cash\n\n");
-   return (money - payment);
+   return 1;
   }
 }
 
