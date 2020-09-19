@@ -49,30 +49,18 @@ int main() {
 /* Write all the test functions */ 
 void test_SufficientCash(void) {
   CU_ASSERT(SUFFICIENT_CASH ==  PayByCash(30, 20));
-  
-  /* Dummy fail*/
-  CU_ASSERT(SUFFICIENT_CASH ==  PayByCash(10, 20));
 }
 
 void test_InufficientCash(void) {
   CU_ASSERT(INSUFFICIENT_CASH  == PayByCash(20, 50));
-  
-  /* Dummy fail*/
-  CU_ASSERT(INSUFFICIENT_CASH  == PayByCash(100, 50));
 }
 
 void test_ValidCard(void) {
   CU_ASSERT(VALID_CARD  == PayByCard("1234"));
-  
-  /* Dummy fail*/
-  CU_ASSERT(VALID_CARD  == PayByCard("123412"));
 }
 
 void test_InvalidPin(void) {
   CU_ASSERT(INVALID_PIN  == PayByCard("25461"));
-  
-  /* Dummy fail*/
-  CU_ASSERT(INVALID_PIN  == PayByCard("1234"));
 }
 
 
