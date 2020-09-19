@@ -19,6 +19,9 @@ jobs:
       
     - name: path
       run:  cd Project/3_Implementation
+      
+    - name: list
+      run:  ls Makefile
     
     - name: application
       run:  make run 
