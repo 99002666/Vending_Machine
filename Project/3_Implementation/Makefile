@@ -15,8 +15,8 @@ test/test_file.c
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
 # All include folders with header files
-INC = -Iinc\
--Itest
+INC = -Iinc
+
 
 PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
 
