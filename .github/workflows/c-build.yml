@@ -16,15 +16,6 @@ jobs:
       
     - name: make all
       run:  make all -C Project/3_Implementation
-      
-    - name: path
-      run:  cd Project/3_Implementation
-    
-    - name: Configure
-      run:  ./configure
-      
-    - name: list
-      run:  ls 
     
     - name: application
       run:  make run 
