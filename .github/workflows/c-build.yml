@@ -20,6 +20,9 @@ jobs:
     - name: application
       run:  make run -C Project/3_Implementation
     
+    - name: Install doxygen
+      run:  sudo apt-get install doxygen
+    
     - name: Documentation
       run:  make doc -C Project/3_Implementation
     
