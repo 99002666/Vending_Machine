@@ -15,7 +15,7 @@ Project/3_Implementation/test/test_file.c
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
 # All include folders with header files
-INC = Project/3_Implementation/-Iinc
+INC = Project/3_Implementation/inc/vending_machine.h
 
 
 PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
