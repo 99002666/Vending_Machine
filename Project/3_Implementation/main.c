@@ -13,6 +13,7 @@ int choc[10]={0,1,2,3,4,5,6,7,8,9};
 e: menu();
 
  printf("Enter Your Option: ");
+ __fpurge(stdin);
  scanf("%d",&intro);
  printf("\n");
 
@@ -29,6 +30,7 @@ w:  printf("----------------------------------------------------------\n\n");
   printf("Rules: You can pay using Cash or Credit/Debit card! \n\n\n");
 
   printf("Enter Your Option: ");
+  __fpurge(stdin);
   scanf("%d",&option);
   printf("\n\n");
 
@@ -50,6 +52,7 @@ w:  printf("----------------------------------------------------------\n\n");
    printf("\n\n");
 
    printf("Choose Chocolate: ");
+   __fpurge(stdin);
    scanf("%d",&choice);
    printf("\n\n");
 
