@@ -25,6 +25,7 @@ void MakePayment()
     if (option == 1)
     {
         printf("Enter your money: ");
+      __fpurge(stdin);
         scanf("%d",&money);
         temp = PayByCash(money, payment);
     }
@@ -32,6 +33,7 @@ void MakePayment()
     {
         printf("Slide your Debit/Credit card\n");
         printf("Enter the 4-digit PIN\n");
+      __fpurge(stdin);
         scanf("%s", &pin);
         temp = PayByCard(pin);
     }
